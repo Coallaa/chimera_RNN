@@ -1,0 +1,26 @@
+# device
+gpu
+# pre-train rounds, train rounds, post-train rounds
+6000, 500000,500000
+# number of neurons
+1500
+# grouping info of chimera states
+3,3
+# time step
+0.1
+# sparse parameter
+0.1
+# lambda
+1
+# G
+1.5
+# Q
+1
+# compare rounds
+300000
+# statistic result calculate window
+1000
+# target/output plot window
+2000
+# l2 error plot window
+10000
