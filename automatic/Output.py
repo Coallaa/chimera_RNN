@@ -9,10 +9,10 @@ import pickle
 class Output:
     def __init__(self, path, finish_train, input_file, predict_file, group_info, compare_round):
         self.path = path
-        self.label = ['before_finish', 'just_finish', 'after_' + str(compare_round)]
-        self.start_plot = [finish_train, finish_train, finish_train + compare_round]
-        # self.label = ['before_finish', 'just_finish', 'after_' + str(30000), 'after_' + str(50000), 'after_' + str(100000), 'after_' + str(compare_round)]
-        # self.start_plot = [finish_train, finish_train, finish_train + 30000, finish_train + 50000, finish_train + 100000, finish_train + compare_round]
+        # self.label = ['before_finish', 'just_finish', 'after_' + str(compare_round)]
+        # self.start_plot = [finish_train, finish_train, finish_train + compare_round]
+        self.label = ['just_finish', 'after_' + str(compare_round)]
+        self.start_plot = [finish_train, finish_train + compare_round]
         self.group_info = group_info
         self.num_nodes = None
         self.cos_out = None
